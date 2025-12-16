@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_eq.css">
+    <link rel="shortcut icon" href="img/LOGO2.png">
+    <title>Conversor de ingredientes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/LOGO2.png" width="95 px" alt="Logo">
+        </div>
+
+        <div class="recetario">
+            <img src="/img/recetario.jpg" width="450 px" height="250 px" alt="Imagen de la pagina">
+        </div>
+        
+        <nav>
+            <ul class="menu">
+                <li class="li"><a href="equivalencias.html">Conversor</a></li>
+                <li class="li"><a href="formulario2.html">Contacto</a></li>
+                <li class="li"><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <div id="cont">
+        <div class="container">
+
+          <!-- ANUNCIO SUPERIOR (antes del conversor) -->
+          <aside class="ad-top">
+            <div>
+                <script type="text/javascript">
+                    <!-- codigo adsterra superior -->
+                </script>
+            </div>
+          </aside>
+
+            <!-- Sección del Conversor -->
+            <div class="converter-section">
+                <div class="header-title">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5"></path>
+                        <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                    <h1>Conversor de Ingredientes</h1>
+                </div>
+                <p class="subtitle">Calcula las equivalencias de ingredientes para tus recetas de repostería</p>
+
+                <div class="converter-grid">
+                    <div class="input-group">
+                        <label for="ingredientSelect">Ingrediente</label>
+                        <select id="ingredientSelect" class="input-field">
+                            <option value="harina">Harina de trigo</option>
+                            <option value="azucar">Azúcar blanca</option>
+                            <option value="azucarImpalpable">Azúcar Impalpable</option>
+                            <option value="mantequilla">Mantequilla</option>
+                            <option value="leche">Leche</option>
+                            <option value="aceite">Aceite</option>
+                            <option value="cacao">Cacao en polvo</option>
+                            <option value="miel">Miel</option>
+                            <option value="agua">Agua</option>
+                            <option value="avena">Avena en copos</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="amountInput">Cantidad</label>
+                        <input type="number" id="amountInput" class="input-field" placeholder="0" min="0" step="0.01">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="unitSelect">Unidad</label>
+                        <select id="unitSelect" class="input-field">
+                            <option value="gramos">g</option>
+                            <option value="tazas">tazas</option>
+                            <option value="cucharadas">cdas</option>
+                            <option value="cucharaditas">cditas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Resultados de conversión -->
+                <div id="resultsContainer" class="results-container" style="display: none;">
+                    <h2 class="results-title">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10H3"></path>
+                            <path d="M21 6H3"></path>
+                            <path d="M21 14H3"></path>
+                            <path d="M21 18H3"></path>
+                        </svg>
+                        Equivalencias
+                    </h2>
+                    <div id="resultsGrid" class="results-grid"></div>
+                </div>
+            </div>
+
+          <!-- ANUNCIO DESPUÉS DE RESULTADOS -->
+          <aside class="ad-results">
+            <div>
+                <script type="text/javascript">
+                    <!-- codigo adsterra después de resultados -->
+                </script>
+            </div>
+          </aside>
+
+            <!-- Tabla de Referencia Rápida -->
+            <div class="reference-section">
+                <h2 class="reference-title">
+                    <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 7V4h16v3"></path>
+                        <path d="M9 20h6"></path>
+                        <path d="M12 4v16"></path>
+                    </svg>
+                    Tabla de Referencia Rápida
+                </h2>
+                <div class="table-container">
+                    <table class="reference-table">
+                        <thead>
+                            <tr>
+                                <th>Ingrediente</th>
+                                <th>1 Taza</th>
+                                <th>1 Cda</th>
+                                <th>1 Cdita</th>
+                            </tr>
+                        </thead>
+                        <tbody id="referenceTableBody">
+                            <!-- Se llenará con JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info-box">
+                    <p><strong>Notas importantes:</strong></p>
+                    <ul>
+                        <li>Las tazas medidoras estándar tienen una capacidad de 240-250 ml</li>
+                        <li>1 cucharada (cda/Tbsp) = 15 ml</li>
+                        <li>1 cucharadita (cdita/tsp) = 5 ml</li>
+                        <li>Las medidas son aproximadas y pueden variar según la densidad del ingrediente</li>
+                        <li>Para mejores resultados en repostería, se recomienda usar una balanza de cocina</li>
+                        <li>No comprimas los ingredientes al medir con tazas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ANUNCIO AL FINAL -->
+          <aside class="ad-bottom">
+            <div>
+                <script type="text/javascript">
+                    <!-- codigo adsterra inferior -->
+                </script>
+            </div>
+          </aside>
+        </div>
+    </div>
+    
+
+    <!--BOTON PARA SUBIR-->
+    <button id="btnSubir" title="Volver arriba">↑</button>
+
+    <footer>
+    <div class="footer-simple">
+        <p><strong>Recetario</strong> - Tu conversor de ingredientes</p>
+        <div class="footer-links">
+            <a href="index.html">Inicio</a> | 
+            <a href="equivalencias.html">Conversor</a> | 
+            <a href="formulario2.html">Contacto</a>
+        </div>
+
+        <div class="footer-legal">
+            <a href="privacidad.html">Política de Privacidad</a> | 
+            <a href="terminos.html">Términos de Uso</a>
+        </div>
+
+        <p class="copyright">&copy; 2025 SRose - Todos los derechos reservados.</p>
+    </div>
+    </footer> 
+
+
+    <script src="/java/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contactanos</title>
+        <link rel="stylesheet" href="/css/style3.css">
+        <link rel="shortcut icon" href="img/LOGO2.png">
+    </head>
+
+    <body>
+  <!--ENCABEZADO-->
+  <header>
+
+    <div class="logo">
+      <img src="/img/LOGO2.png" width="95 px" alt= "Logo">
+    </div>
+
+    <div class="recetario" >
+      <img src="/img/recetario.jpg" width="450 px" height= ¨500px¨ alt= "Imagen de la pagina">
+    </div>
+        
+    <nav>
+      <ul class="menu">
+       <li class="li"><a href="equivalencias.html">Conversor</a></li>
+       <li class="li"><a href="formulario2.html">Contacto</a></li>
+       <li class="li"><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+    
+    
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('_uAiX4vAZh2V-IbtE')
+</script>
+
+  </header>
+  <!--FIN DEL ENCABEZADO-->
+
+  <section id="formulario">
+    <div class="container">
+
+      <!-- ANUNCIO ANTES DEL FORMULARIO -->
+      <aside class="ad-top">
+        <div>
+          <script type="text/javascript">
+            <!-- codigo adsterra -->
+          </script>
+        </div>
+      </aside>
+       <!-- ANUNCIO ANTES DEL FORMULARIO -->
+
+      <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <p>Completa el formulario para informarnos cualquier problema o alguna sugerencia para mejorar.</p>
+        
+        <form id="contactForm">
+          <!--NOMBRE-->
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre">
+              <div class="error" id="errorNombre"></div>
+            </div>
+          <!--EMAIL  
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email">
+              <div class="error" id="errorEmail"></div>
+            </div> 
+          -->  
+          <!--ASUNTO-->   
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option value="">Selecciona un asunto</option>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="problema">Reportar problema</option>
+              </select>
+              <div class="error" id="errorAsunto"></div>
+            </div>
+          <!--MENSAJE-->   
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+              <div class="error" id="errorMensaje"></div>
+            </div>     
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+                
+        <div class="success-message" id="successMessage">
+          ¡Gracias por tu mensaje! Te contactaremos pronto.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--FIN FORMULARIO-->
+  <!--BOTON PARA SUBIR-->
+    <button id="btnSubir" title="Volver arriba">↑</button>
+
+  <footer>
+    <div class="footer-simple">
+        <p><strong>Recetario</strong> - Tu conversor de ingredientes</p>
+        <div class="footer-links">
+            <a href="index.html">Inicio</a> | 
+            <a href="equivalencias.html">Conversor</a> | 
+            <a href="formulario2.html">Contacto</a>
+        </div>
+
+        <div class="footer-legal">
+            <a href="privacidad.html">Política de Privacidad</a> | 
+            <a href="terminos.html">Términos de Uso</a>
+        </div>
+
+        <p class="copyright">&copy; 2025 SRose - Todos los derechos reservados.</p>
+    </div>
+  </footer> 
+
+<script src="java/java_form.js"></script>
+
+</body>
+</html>
