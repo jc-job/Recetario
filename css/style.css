@@ -95,7 +95,7 @@ nav a:hover {
     min-height: 100vh;
     border: 1px solid rgb(0, 0, 0);
     background-image: linear-gradient(rgba(255, 255, 255, 0.674), rgba(255, 255, 255, 0.778)),
-                      url(./img/fondo.png);
+                      url(../img/fondo.png);
     background-size: 100%;
 
 }
@@ -106,7 +106,7 @@ nav a:hover {
 
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(41, 41, 41, 0.453)),
-                      url(./img/fondo_receta3.jpg);
+                      url(../img/fondo_receta3.jpg);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
