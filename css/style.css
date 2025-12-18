@@ -55,7 +55,8 @@ img {
 
 nav { 
     display: flex;     
-    justify-content: flex-end
+    justify-content: flex-end;
+        overflow: hidden;
 }
 
 li{
@@ -65,6 +66,11 @@ li{
     margin: 10px;
     
 }
+
+.menu{
+    overflow: hidden;
+}
+
 
 nav a {
     display: inline-block;
@@ -298,6 +304,7 @@ nav a:hover {
 /* ========================================= */
                  /* ANUNCIOS */
 /* ========================================= */
+
 aside {
     display: flex;
     width: fit-content;
@@ -305,13 +312,29 @@ aside {
     justify-content: center;
     margin: 20px auto;
     min-height: 50px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 aside > div {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+/* Espaciado específico para cada anuncio */
+aside.ad-top {
+
+    overflow: hidden;
+    max-width: 100%; 
+}
+
+aside div{
+    overflow: hidden;
+    max-width: 100%; 
+}
+
 
 /* ========================================= */
                 /* FOOTER */
@@ -430,6 +453,19 @@ footer{
         max-width: 100%;
     }
     
+    nav{
+        min-width: 320px;
+        overflow: hidden;
+    }
+    nav a {
+        padding: 8px 12px; /* Reducir padding */
+        font-size: 0.85em; /* Reducir tamaño de fuente */
+    }
+    
+    .menu {
+        gap: 5px; /* Reducir espacio entre items */
+    }
+
 }
 
 @media (max-width: 480px) {
