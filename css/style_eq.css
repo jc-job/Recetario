@@ -21,6 +21,7 @@ header {
     border: 1px solid black;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 img {
@@ -103,14 +104,14 @@ nav a:hover {
     background-size: 100%;
     justify-content: center;
 }
-
+/*
 .container {
     flex: 1;
     max-width: 600%;
     margin: 0 auto;
     padding: 40px;
-    
-}
+}*/
+
 /* ========================================= */
             /* CONVERSOR */
 /* ========================================= */
@@ -439,7 +440,6 @@ aside > div {
 }
 /* Espaciado específico para cada anuncio */
 aside.ad-top {
-    margin-bottom: 30px;
     overflow: hidden;
     max-width: 100%; 
 }
@@ -449,13 +449,6 @@ aside div{
     max-width: 100%; 
 }
 
-aside.ad-results {
-    margin: 30px auto;
-}
-
-aside.ad-bottom {
-    margin-top: 30px;
-}
 
 /* ========================================= */
             /* BOTON PARA SUBIR */
@@ -506,8 +499,7 @@ aside.ad-bottom {
         height: 359px;
     }
 
-    .logo
-    {
+    .logo    {
      width:0px;
      height: 0px;
      border: none;
@@ -538,6 +530,7 @@ aside.ad-bottom {
         border-top: 2px solid black;
         width: 100vw;
         height: auto;
+         gap: 5px; /* Reducir espacio entre items */
     }
 
     .li{
@@ -546,16 +539,12 @@ aside.ad-bottom {
     }
 
     nav{
-          min-width: 320px;
-    overflow: hidden;
+        min-width: 320px;
+        overflow: hidden;
     }
     nav a {
         padding: 8px 12px; /* Reducir padding */
         font-size: 0.85em; /* Reducir tamaño de fuente */
-    }
-    
-    .menu {
-        gap: 5px; /* Reducir espacio entre items */
     }
 
     
@@ -590,19 +579,8 @@ aside.ad-bottom {
     }
 
  aside {
-        width: fit-content;
-        max-width: 95%;
-        margin: 15px auto;
-        
-    }
-    
-    aside.ad-top {
-        margin-bottom: 20px;
-    }
-    
-    aside.ad-results {
-        margin: 20px auto;
-    }
+     max-width: 100%;
+}
 }
 
 @media (max-width: 480px) {
@@ -637,13 +615,11 @@ aside.ad-bottom {
     .reference-table {
         font-size: 0.8em;
     }
-       aside {
-        max-width: 95%;
-        margin: 10px auto;
-    }
-      nav a {
-        padding: 6px 10px;
-        font-size: 0.8em;
-    }
 
+
+}
+
+/* Animación más suave para los anuncios */
+aside.fade-in-section {
+    transition-duration: 0.6s;
 }

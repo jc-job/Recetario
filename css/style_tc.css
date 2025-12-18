@@ -56,7 +56,12 @@ img {
 
 nav { 
     display: flex;     
-    justify-content: flex-end
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.menu{
+    overflow: hidden;
 }
 
 li{
@@ -246,23 +251,6 @@ nav a:hover {
     display: block;
 }
 
-/* ========================================= */
-                 /* ANUNCIOS */
-/* ========================================= */
-aside {
-    display: flex;
-    width: fit-content;
-    max-width: 95%;
-    justify-content: center;
-    margin: 20px auto;
-    min-height: 50px;
-}
-
-aside > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* ========================================= */
                 /* FOOTER */
@@ -369,9 +357,6 @@ footer{
        padding: 10px;
     }
 
-        aside {
-        max-width: 100%;
-    }
 
     
     .legal-content {

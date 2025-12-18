@@ -21,6 +21,7 @@ header {
    border: 1px solid black;
    display: flex; 
    flex-direction: row;  
+   overflow: hidden;
 }
 
 img {
@@ -56,7 +57,7 @@ img {
 nav { 
     display: flex;     
     justify-content: flex-end;
-        overflow: hidden;
+    overflow: hidden;
 }
 
 li{
@@ -93,7 +94,7 @@ nav a:hover {
 
 
 .contenido-principal {
- background-color: #ecf0f1;
+   background-color: #ecf0f1;
     margin-top: auto;
     padding: 50px 0;
     margin-bottom: 5px;
@@ -103,6 +104,7 @@ nav a:hover {
     background-image: linear-gradient(rgba(255, 255, 255, 0.674), rgba(255, 255, 255, 0.778)),
                       url(../img/fondo.png);
     background-size: 100%;
+    justify-content: center;
 
 }
 
@@ -437,6 +439,7 @@ footer{
         border-top: 2px solid black;
         width: 100vw;
         height: auto;
+        gap: 5px; /* Reducir espacio entre items */
     }
 
     .li{
@@ -460,10 +463,6 @@ footer{
     nav a {
         padding: 8px 12px; /* Reducir padding */
         font-size: 0.85em; /* Reducir tamaño de fuente */
-    }
-    
-    .menu {
-        gap: 5px; /* Reducir espacio entre items */
     }
 
 }
