@@ -54,7 +54,8 @@ img {
 
 nav {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    overflow: hidden;
 }
 
 li{
@@ -62,6 +63,9 @@ li{
     text-align: center;
     list-style-type: none;
     margin: 10px;
+}
+.menu{
+    overflow: hidden;
 }
 
 nav a {
@@ -436,6 +440,13 @@ aside > div {
 /* Espaciado específico para cada anuncio */
 aside.ad-top {
     margin-bottom: 30px;
+    overflow: hidden;
+    max-width: 100%; 
+}
+
+aside div{
+    overflow: hidden;
+    max-width: 100%; 
 }
 
 aside.ad-results {
@@ -534,6 +545,19 @@ aside.ad-bottom {
        padding: 10px;
     }
 
+    nav{
+          min-width: 320px;
+    overflow: hidden;
+    }
+    nav a {
+        padding: 8px 12px; /* Reducir padding */
+        font-size: 0.85em; /* Reducir tamaño de fuente */
+    }
+    
+    .menu {
+        gap: 5px; /* Reducir espacio entre items */
+    }
+
     
 /*FIN ENCABEZADO*/
 
@@ -567,8 +591,9 @@ aside.ad-bottom {
 
  aside {
         width: fit-content;
-        max-width: 100%;
+        max-width: 95%;
         margin: 15px auto;
+        
     }
     
     aside.ad-top {
@@ -613,7 +638,12 @@ aside.ad-bottom {
         font-size: 0.8em;
     }
        aside {
-        max-width: 100%;
+        max-width: 95%;
         margin: 10px auto;
     }
+      nav a {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
 }
