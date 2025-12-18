@@ -104,6 +104,10 @@ nav a:hover {
     background-size: 100%;
     justify-content: center;
 }
+.container {
+  
+    padding: 40px;
+}
 
 /* ========================================= */
             /* CONVERSOR */
@@ -482,7 +486,7 @@ aside div{
 /* ========================================= */
 
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   /*ENCABEZADO*/
     header{
         display: flex;
@@ -542,7 +546,10 @@ aside div{
 
     
 /*FIN ENCABEZADO*/
+    .container{
+    padding: 25px;
 
+    }
 
     .converter-section,
     .reference-section {
