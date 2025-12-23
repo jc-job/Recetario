@@ -1,0 +1,23 @@
+# Configuración de construcción
+[build]
+  publish = "/"  
+
+# Configuración de optimización y redirecciones
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.processing]
+  skip_processing = false
+
+# Optimiza las rutas de tu web (Pretty URLs)
+[build.processing.html]
+  pretty_urls = true
+
+# Esto ayuda a que el navegador guarde en caché tus imágenes y no gaste ancho de banda extra
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
